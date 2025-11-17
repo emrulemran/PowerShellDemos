@@ -25,6 +25,27 @@ foreach ($device in $devices) {
 }
 
 
+# 3. while loop:
+
+$num = 0 
+while($num -le 10){
+    Write-Host $num
+        $num++
+}
+
+
+
+# 4. do while loop
+
+$num = 10 
+
+do{
+    Write-Host $num
+    $num--}
+    while($num -le 0)
+}
+
+
 # switch statement:
 $weekDay = "Tuesday"
 
