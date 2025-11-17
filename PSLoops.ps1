@@ -37,13 +37,22 @@ while($num -le 10){
 
 # 4. do while loop
 
-$num = 10 
+$num = 0 
 
 do{
     Write-Host $num
-    $num--}
-    while($num -le 0)
+    $num++
 }
+    while($num -le 10)
+
+
+ $startNum = 10
+ 
+ do{
+    Write-Host $startNum
+    $startNum--
+ }
+ while($startNum -ge 0)
 
 
 # switch statement:
@@ -59,3 +68,12 @@ switch ($weekDay) {
     "Sunday" { Write-Host "Today is Sunday" }
     Default { "Not a valid Week day" }
 }
+
+
+$numArr = @(1,2,3,4,5,6,7,8,9,10)
+$total = 0
+for($i = 0; $i -lt $numArr.Length; $i++ ){
+$total += $numArr[$i]
+}
+
+Write-Host $total
