@@ -1,19 +1,24 @@
+<# 5 types of loops in PowerShell:
+    1. for loop
+    2. foreach loop
+    3. while loop
+    4. do while loop
+    5. do until loop
+#>
+
+# 1. for loop:
+for ($i = 0; $i -le 10; $i++) {
+    Write-Host $i -ForegroundColor Blue
+}
+
+# 2. foreach loop
 $name = "cauliflower"
 
 foreach ($char in $name.ToCharArray()) {
     Write-Host $char
 }
 
-
-# For loop
-
-for ($i = 0; $i -le 10; $i++) {
-    Write-Host $i -ForegroundColor Blue
-}
-
-# Looping through an array elements
-
-$devices = @("PC", "mac", "android", "blackberry", "PSP4")
+$devices = @("PC", "mac", "android", "blackberry", "PSP4") # Looping through an array elements
 
 foreach ($device in $devices) {
     Write-Host $device -ForegroundColor Red
@@ -21,7 +26,6 @@ foreach ($device in $devices) {
 
 
 # switch statement:
-
 $weekDay = "Tuesday"
 
 switch ($weekDay) {
